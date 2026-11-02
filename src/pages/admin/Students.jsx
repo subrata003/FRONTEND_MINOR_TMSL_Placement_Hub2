@@ -47,7 +47,7 @@ export default function Students() {
           <tbody>
             {data.students.map((s) => (
               <tr key={s._id}>
-                <td>{s.name}</td><td>{s.rollNo || '—'}</td><td>{s.user?.email}</td>
+                <td>{s.name}</td><td>{s.rollNumber || '—'}</td><td>{s.user?.email}</td>
                 <td>{s.department || '—'}</td><td>{s.degree || '—'}</td><td>{s.passingYear || '—'}</td>
                 <td>{s.cgpa ?? '—'}</td><td>{s.backlogs}</td>
                 <td>{s.resume ? <a href={s.resume} target="_blank" rel="noreferrer">View</a> : '—'}</td>
